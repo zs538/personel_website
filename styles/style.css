@@ -1,0 +1,30 @@
+a{
+    color: #00f;
+
+    &:hover{
+            color: #f00;
+    }
+
+    &:active{
+        color: #ff0;
+    }
+
+    &:visited{
+        color: #30f;
+    }
+}
+
+.links {
+  position: absolute;
+  right: 31px;
+  bottom: 209px;
+  z-index: 9;
+  
+}
+
+.imagee{
+    width: 421px;
+    height: 571px;
+    background: url('../images/image0.jpg');
+    position: relative;
+}
