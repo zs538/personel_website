@@ -1,10 +1,16 @@
 {
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/info", "destination": "/pages/info.html" },
     { "source": "/projekty", "destination": "/pages/projekty.html" },
     { "source": "/blog", "destination": "/pages/blog.html" },
     { "source": "/kontakt", "destination": "/pages/kontakt.html" },
-    { "source": "/ukolydoskoly", "destination": "/pages/ukoly.html" }
+    { "source": "/ukolydoskoly", "destination": "/pages/ukoly.html" },
+    { "source": "/api/(.*)", "destination": "/api/$1" }
   ]
 }
